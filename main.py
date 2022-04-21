@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import time
+import sys
 
 CHANNEL_ID = 961894870216237107
 
@@ -16,6 +17,7 @@ async def greet():
         time.sleep(60)
 
     client.logout()
+    sys.exit("單次檢查完成")
 
 @client.event
 async def on_ready():
