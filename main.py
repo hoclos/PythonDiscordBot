@@ -15,7 +15,7 @@ async def greet():
         loopLimit += 1
         time.sleep(60)
 
-    exit()
+    client.logout()
 
 @client.event
 async def on_ready():
