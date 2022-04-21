@@ -16,7 +16,7 @@ async def greet():
         loopLimit += 1
         time.sleep(60)
 
-    client.logout()
+    await client.logout()
     sys.exit("單次檢查完成")
 
 @client.event
